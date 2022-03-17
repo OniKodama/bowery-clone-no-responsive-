@@ -1,0 +1,54 @@
+.menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f1421;
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    width: 60%;
+
+    li {
+      margin-bottom: 25px;
+      a {
+        font-size: inherit;
+        color: inherit;
+        font-weight: 500;
+        text-decoration: none;
+
+        .number {
+          font-size: 12px;
+          font-weight: bold;
+          font-family: "Times New Roman", Times, serif;
+          color: lightgray;
+          margin-right: 2px;
+        }
+        .dot {
+          color: #007bff;
+        }
+      }
+
+      &:hover {
+        font-weight: 500;
+        color: #007bff;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.benefits {
+  width: 100%;
+  height: 300px;
+  background-color: #0f1421;
+
+  .wrapper {
+    display: flex;
+    float: left;
+    margin-left: 150px;
+    flex-direction: column;
+
+    .title-container {
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+        color: white;
+      }
+      h2 {
+        font-size: 50px;
+        font-weight: 500;
+        color: #007bff;
+      }
+    }
+    .desc-container {
+      height: 100px;
+      width: 400px;
+      overflow: hidden;
+
+      p {
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}

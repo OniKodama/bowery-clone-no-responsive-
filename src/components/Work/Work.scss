@@ -1,0 +1,147 @@
+.work {
+  width: 100%;
+  height: 500px;
+  background-color: #0f1421;
+
+  .wrapper {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      padding: 20px 20px;
+      justify-content: center;
+
+      .who-we-are {
+        align-items: center;
+        display: flex;
+        width: 400px;
+        margin-left: 40px;
+        margin-top: 40px;
+
+        .line {
+          width: 50px;
+          height: 1px;
+          background-color: white;
+          margin-right: 8px;
+        }
+        .who {
+          color: white;
+          font-size: 11px;
+        }
+      }
+      .title-desc {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        h1 {
+          color: white;
+          font-size: 40px;
+          margin-left: 10px;
+        }
+        p {
+          font-size: 16px;
+          margin-top: 10px;
+          margin-right: 13px;
+          color: white;
+        }
+      }
+      .button {
+        margin-top: 50px;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: inherit;
+        border: none;
+        border-radius: 20px;
+        padding: 5px;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+
+        span {
+          color: white;
+          font-size: 15px;
+          margin-left: -40px;
+          z-index: 1;
+        }
+        /* background-color: white;
+        position: relative; */
+        .circle {
+          background-color: #007bff;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 160px;
+          position: absolute;
+          overflow: hidden;
+        }
+        .arrow {
+          margin-left: 8px;
+          font-size: 15px;
+          color: white;
+        }
+
+        &:hover {
+          .circle {
+            width: 200px;
+            border-radius: 20px;
+            margin-left: 150px;
+            transition: all 0.3s ease-in-out;
+          }
+          .arrow {
+            z-index: 1;
+          }
+        }
+      }
+      .arrowsContainer {
+        width: 150px;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .leftArrow {
+          height: 100%;
+          font-size: 35px;
+          cursor: pointer;
+          color: white;
+
+          .leftArrowContainer {
+            border-radius: 50px;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .rightArrow {
+          height: 100%;
+          font-size: 35px;
+          cursor: pointer;
+          color: white;
+
+          .rightArrowContainer {
+            border-radius: 50px;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}

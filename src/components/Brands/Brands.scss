@@ -1,0 +1,46 @@
+.brands {
+  width: 100%;
+  height: 300px;
+  background-color: #0f1421;
+
+  .title {
+    display: flex;
+    padding: 20px 20px;
+    margin-left: 50px;
+
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+      font-size: 50px;
+      font-weight: 300;
+    }
+  }
+  .cards-container {
+    width: 100%;
+    height: 120px;
+    background-color: #0f1421;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .cards {
+      height: 100%;
+      width: 200px;
+      background-color: #181d29;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      /* img {
+        width: 100%;
+        height: 50px;
+
+        z-index: 2;
+        overflow: hidden;
+      } */
+    }
+  }
+}
