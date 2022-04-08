@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Menu from './components/Menu/Menu'
 import Description from './components/Description/Description';
@@ -11,15 +11,25 @@ import Brands from './components/Brands/Brands';
 import Testimonials from './components/Testimonials/Testimonials';
 import Newsletter from './components/Newsletter/Newsletter';
 import Footer from './components/Footer/Footer';
+import Toggle from './components/Toggle/Toggle';
+import { ThemeContext } from './Context';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   return (
-    <div className="App">
+    <div  style={{
+      backgroundColor: darkMode ? "white" : "#0f1421",
+      color: darkMode ? "#0f1421" : "white",
+      /* color: darkMode && "white", */
+    }}>
+      
       <Navbar menuOpen = {menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen = {menuOpen} setMenuOpen={setMenuOpen}/> 
-      <div>
+      
+        <Toggle />
         <Description />
         <Offer />
         <Benefits />
@@ -30,7 +40,7 @@ function App() {
         <Testimonials />
         <Newsletter />
         <Footer />
-      </div>
+        
     </div>
   );
 }

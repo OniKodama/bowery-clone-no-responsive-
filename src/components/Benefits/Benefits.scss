@@ -1,3 +1,5 @@
+@import "../../Global.scss";
+
 .benefits {
   width: 100%;
   height: 300px;
@@ -20,6 +22,18 @@
         font-weight: 500;
         color: #007bff;
       }
+      @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
     .desc-container {
       height: 100px;
@@ -30,6 +44,19 @@
         font-size: 20px;
         color: white;
       }
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-left: 5px;
+          font-size: 17px;
+        }
+      }
+    }
+    @include mobile {
+      margin-left: 0;
     }
   }
 }

@@ -7,7 +7,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
             <div className="wrapper">
                 <div className="left">
                     <h1>B</h1>
-                    <span>.</span>
+                        <span>.</span>
                 </div>
                 <div className = "right">
                     <div className = "hamburguer" onClick = {() =>setMenuOpen(!menuOpen)}>

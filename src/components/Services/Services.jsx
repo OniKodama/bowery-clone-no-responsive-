@@ -1,6 +1,6 @@
 import "./Services.scss"
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import {Deals} from "../../data"
+import {Deals} from '../../data'
 
 
 const Services = () => {
@@ -38,6 +38,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="right">
+                
                 <div className="cardsContainer">
                     {Deals.map((item) =>(
                         <div className="container">

@@ -1,14 +1,19 @@
 import React from 'react'
 import './Menu.scss'
+import {motion} from 'framer-motion'
 
 const Menu = ({menuOpen, setMenuOpen}) => {
     return (
-        <div className= {"menu "+ (menuOpen && "active")}>
+        <div className= {"menu "+ (menuOpen && "active")}>  
             <ul>
+            <motion.div
+                whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+            >
                 <li onClick={() => setMenuOpen(false)}>
                     <a href = "#description">
                         <span className = "number">01</span>
-                        who we are
+                        Home
                         <span className = "dot">.</span>
                     </a>
                     
@@ -16,14 +21,14 @@ const Menu = ({menuOpen, setMenuOpen}) => {
                 <li onClick={() => setMenuOpen(false)}>
                     <a href = "#offers">
                         <span className = "number">02</span>
-                        what we offer
+                        Blog
                         <span className = "dot">.</span>
                     </a>
                 </li>
                 <li onClick={() => setMenuOpen(false)}>
                     <a href = "#work">
                         <span className = "number">03</span>
-                        our work
+                        Podcast
                         <span className = "dot">.</span>
                     </a>
                     
@@ -31,7 +36,7 @@ const Menu = ({menuOpen, setMenuOpen}) => {
                 <li onClick={() => setMenuOpen(false)}>
                     <a href = "#trust">
                         <span className = "number">04</span>
-                        who trust us
+                        Video
                         <span className = "dot">.</span>
                     </a>
                     
@@ -51,6 +56,7 @@ const Menu = ({menuOpen, setMenuOpen}) => {
                     </a>
                     
                 </li>
+                </motion.div>
             </ul>
         </div>
     )
